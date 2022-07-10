@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <h1>Калькулятор подсчета авто</h1>
+    <div class="calc">
+        <div>
+            <h2>Машины</h2>
+            <label>
+                <select name="cars">
+                    <option value="500">Ford</option>
+                    <option value="600" selected>Audi</option>
+                    <option value="900">Lada</option>
+                    <option value="400">Kia</option>
+                </select>
+            </label>
+        </div>
+        <div>
+            <h2>Тип услуги</h2>
+            <label>
+                <input type="radio" value="1000" name="typeService" checked>Целый автомобиль
+            </label>
+            <label>
+                <input type="radio" value="1500" name="typeService">Распил легковой
+            </label>
+            <label>
+                <input type="radio" value="900" name="typeService">Распил рамный
+            </label>
+            <label>
+                <input type="radio" value="800" name="typeService">Конструктор легковой
+            </label>
+        </div>
+        <div>
+            <h2>Тип топлива</h2>
+            <label>
+                <input type="radio" value="2000" name="typeOfOil">Бензин (включая гибрид)
+            </label>
+            <label>
+                <input type="radio" value="1500" name="typeOfOil">Дизельное топливо
+            </label>
+            <label>
+                <input type="radio" value="900" name="typeOfOil">электрический
+            </label>
+        </div>
+        <div>
+            <h2>Цена на аукционе</h2>
+            <label>
+                <input type="range" min="5000" max="20000" value="50" id="myrange" class="range1">
+            </label>
+        </div>
+        <div id="sendresults">
+            5000
+        </div>
+        <div>
+            <h2>Дополнительные услуги</h2>
+            <label>
+                <input type="checkbox" name="addition" value="1000">Расширенная гарантия
+            </label>
+            <label>
+                <input type="checkbox" name="addition" value="2000">Сервис
+            </label>
+        </div>
+        <div class="total">
+            <h2>Итого: <span></span></h2>
+        </div>
+    </div>
+    <script src="calc.js"></script>
+</body>
+</html>
